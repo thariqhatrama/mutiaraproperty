@@ -127,19 +127,19 @@
         align-items: center;
         text-align: center; /* Ensures text content is centered */
         color: white; /* Adjust the text color to improve contrast against the background */
-        margin-top: 75px;
+        margin-top: 90px;
     }
 
     /* Background images for different devices */
     @media (min-width: 1025px) { /* Desktop and larger screens */
         #utama {
-            background-image: url('img/keder.jpg');
+            background-image: url('img/1024x576.png');
         }
     }
 
     @media (max-width: 1024px) { /* Tablets and mobile devices */
         #utama {
-            background-image: url('img/portrait 12.jpg');
+            background-image: url('img/portrait.png');
         }
     }
     .img-responsive {
@@ -154,13 +154,13 @@
 
 @media (max-width: 768px) {
     .img-responsive {
-        background-image: url('img/portrait 12.jpg');
+        background-image: url('img/portrait.png');
     }
 }
 
 @media (min-width: 769px) {
     .img-responsive {
-        background-image: url('img/keder.jpg');
+        background-image: url('img/1024x576.png');
     }
 }
 
@@ -177,7 +177,7 @@
     <section id="utama">
         
     </section>
-    <div class="img-responsive" style="background-image: url('img/keder.jpg');">
+    <div class="img-responsive" style="background-image: url('img/1024x576.png');">
         <!-- Ini akan menampilkan gambar latar belakang yang responsif -->
       </div>
 
@@ -214,7 +214,7 @@
             </div>
             </div>
         </section>
-        
+
     <section id="type-rumah">
         <div class="container-fluid" style="background-color: #092947">
             <div class="row mb-2">
