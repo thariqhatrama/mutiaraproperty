@@ -1,12 +1,18 @@
 @extends('laymas')
 @extends('wa')
 @section('content')
+
     <style>
         .keunggulan {
     background-size: cover;
     position: relative;
     color: #000;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.keunggulan-wrapper {
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .color-overlay-keunggulan {
@@ -87,8 +93,8 @@
 
         @media (max-width: 768px) {
             .container-fasilitas {
-                background-image: url('img/bg-fasilitas-mobile.png');
-                height: 98vh;
+                background-image: url('img/Rawa Kopi/rawakopi-3.jpg');
+                height: 120vh;
             }
 
             .konten-fasilitas {
@@ -174,72 +180,41 @@
     <div class="img-responsive" style="background-image: url('img/keder.jpg');">
         <!-- Ini akan menampilkan gambar latar belakang yang responsif -->
       </div>
-    {{-- <section id="fasilitas">
-        <div class="container-fasilitas container-fluid" style="background-image: url('./img/img-fasilitas.png');">
-            <div class="color-overlay-fasilitas container-fluid">
-                <div class="konten-fasilitas row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="fasilitas-item">
-                            <img src="{{ asset('img/fasilitas-text.png') }}" class="img-fluid w-100 mb-3" alt="">
+
+    
+        <section id="fasilitas">
+            <div class="container-fasilitas container-fluid" style="background-image: url('./img/img-fasilitas.png');">
+                <div class="color-overlay-fasilitas container-fluid">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
+                            <div class="fasilitas-item">
+                                <img src="{{ asset('img/fasilitas-text.png') }}" class="img-fluid w-100 mb-3" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="fasilitas-item">
-                            <img src="{{ asset('img/icon-cctv.png') }}" class="img-fluid w-100" alt="">
-                            <p class="d-flex justify-content-center">CCTV</p>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
+                            <div class="fasilitas-item">
+                                <img src="{{ asset('img/icon-cctv.png') }}" class="img-fluid w-100" alt="">
+                                <p class="d-flex justify-content-center">CCTV</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="fasilitas-item">
-                            <img src="{{ asset('img/icon-taman.png') }}" class="img-fluid w-100" alt="">
-                            <p class="d-flex justify-content-center">Taman Anak</p>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
+                            <div class="fasilitas-item">
+                                <img src="{{ asset('img/icon-taman.png') }}" class="img-fluid w-100" alt="">
+                                <p class="d-flex justify-content-center">Taman Anak</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="fasilitas-item">
-                            <img src="{{ asset('img/icon-security.png') }}" class="img-fluid w-100" alt="">
-                            <p class="d-flex justify-content-center mb-sm-3">Keamanan 24 Jam</p>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
+                            <div class="fasilitas-item">
+                                <img src="{{ asset('img/icon-security.png') }}" class="img-fluid w-100" alt="">
+                                <p class="d-flex justify-content-center">Keamanan 24 Jam</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-    </section> --}}
-
-    <section id="fasilitas">
-        <div class="container-fasilitas container-fluid" style="background-image: url('./img/img-fasilitas.png');">
-            <div class="color-overlay-fasilitas container-fluid">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="fasilitas-item">
-                            <img src="{{ asset('img/fasilitas-text.png') }}" class="img-fluid w-100 mb-3" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="fasilitas-item">
-                            <img src="{{ asset('img/icon-cctv.png') }}" class="img-fluid w-100" alt="">
-                            <p class="d-flex justify-content-center">CCTV</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="fasilitas-item">
-                            <img src="{{ asset('img/icon-taman.png') }}" class="img-fluid w-100" alt="">
-                            <p class="d-flex justify-content-center">Taman Anak</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="fasilitas-item">
-                            <img src="{{ asset('img/icon-security.png') }}" class="img-fluid w-100" alt="">
-                            <p class="d-flex justify-content-center">Keamanan 24 Jam</p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-        </div>
-    </section>
-
+        </section>
+        
     <section id="type-rumah">
         <div class="container-fluid" style="background-color: #092947">
             <div class="row mb-2">
@@ -268,17 +243,27 @@
                                             data-bs-slide-to="1" aria-label="Slide 2"></button>
                                         <button type="button" data-bs-target="#carouselExampleIndicators1"
                                             data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators1"
+                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators1"
+                                            data-bs-slide-to="4" aria-label="Slide 5"></button>
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="{{ asset('img/home-1.jpg') }}" class="d-block w-100" alt="">
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 1/Lantai 1.png') }}" class="d-block w-100" alt="">
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 1/Living Room.png') }}" class="d-block w-100" alt="">
+                                        </div>
+                                        <div class="carousel-item active">
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 1/Backyard.png') }}" class="d-block w-100" alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-1a.jpeg') }}" class="d-block w-100"
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 1/Bath Room.png') }}" class="d-block w-100"
                                                 alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-1.jpg') }}" class="d-block w-100"
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 1/Bedroom.png') }}" class="d-block w-100"
                                                 alt="">
                                         </div>
                                     </div>
@@ -328,18 +313,42 @@
                                             data-bs-slide-to="1" aria-label="Slide 2"></button>
                                         <button type="button" data-bs-target="#carouselExampleIndicators2"
                                             data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators2"
+                                            data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators2"
+                                            data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators2"
+                                            data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators2"
+                                            data-bs-slide-to="6" aria-label="Slide 7"></button>
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="{{ asset('img/home-2.jpg') }}" class="d-block w-100"
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 2/Lantai 2.png') }}" class="d-block w-100"
                                                 alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-2a.jpg') }}" class="d-block w-100"
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 2/Bath Room.png') }}" class="d-block w-100"
                                                 alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-2.jpg') }}" class="d-block w-100"
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 2/Backyard 2.png') }}" class="d-block w-100"
+                                                alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 2/Kitchen.png') }}" class="d-block w-100"
+                                                alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 2/Bedroom 1.png') }}" class="d-block w-100"
+                                                alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 2/Bedroom 2.png') }}" class="d-block w-100"
+                                                alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="{{ asset('img/Pondok Cabe/Lantai 2/Bedroom 3.png') }}" class="d-block w-100"
                                                 alt="">
                                         </div>
                                     </div>
@@ -376,7 +385,8 @@
         </div>
     </section>
 
-        <section id="keunggulan">
+<div class="keunggulan-wrapper" style="background-color: rgba(234, 234, 234, 0.7);">
+    <section id="keunggulan">
         <div class="keunggulan">
             <div class="color-overlay-keunggulan d-flex flex-column flex-lg-row">
                 <div class="img-keunggulan col-12 col-lg-6 d-flex justify-content-center align-items-center my-3">
@@ -423,48 +433,7 @@
             </div>
         </div>
     </section>
-
-    {{-- <section id="artikel">
-        <div class="pt-3" style="background-color: #092947;">
-            <div class="container">
-                <h4 class="text-white text-center mb-4">Artikel</h4>
-                <div class="row justify-content-center">
-                    <div class="col-12 col-sm-8 col-md-4 mb-3 d-flex justify-content-center">
-                        <div class="card" style="width: auto;">
-                            <img src="{{ asset('img/artikel-1.png') }}" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Perumahan Elite Terjangkau Jakarta, Mutiara Residance!</h5>
-                                <p class="card-text">09 Maret 2024</p>
-                                <a href="#" class="btn btn-primary">Selanjutnya</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-8 col-md-4 mb-3 d-flex justify-content-center">
-                        <div class="card" style="width: auto;">
-                            <img src="{{ asset('img/artikel-2.png') }}" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Masih Ragu? Ini Keuntungan Memiliki Rumah Cluster</h5>
-                                <p class="card-text">09 Maret 2024</p>
-                                <a href="#" class="btn btn-primary">Selanjutnya</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-8 col-md-4 mb-3 d-flex justify-content-center">
-                        <div class="card" style="width: auto;">
-                            <img src="{{ asset('img/artikel-3.png') }}" class="card-img-top" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">Inspirasi Warna Cat Rumah yang Cantik nan Populer</h5>
-                                <p class="card-text">09 Maret 2024</p>
-                                <a href="#" class="btn btn-primary">Selanjutnya</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
+</div>
 
     <section id="artikel">
         <div class="pt-3" style="background-color: #092947;">
@@ -514,40 +483,6 @@
         </div>
     </section>
 
-    {{-- <section id="portfolio">
-        <div class="container-fluid p-2" style="background-color: #092947;">
-            <style>
-                .embed-responsive {
-                    position: relative;
-                    width: 50%;
-                    padding-top: 56.25%;
-                    /* 16:9 Aspect Ratio */
-                }
-
-                .embed-responsive iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
-                    width: 50%;
-                    height: 50%;
-                    border: none;
-                    /* Optional: Removes the default iframe border */
-                    border-radius: 10px;
-                    /* Optional: Adds rounded corners to the iframe */
-                }
-            </style>
-
-            <div class="embed-responsive">
-                <iframe src="https://www.youtube.com/embed/7aQrYNcpJDs" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-    </section> --}}
-
     <section id="portfolio">
         <div class="container-fluid p-2 d-flex justify-content-center" style="background-color: #092947;">
             <style>
@@ -572,79 +507,13 @@
             </style>
     
             <div class="embed-responsive">
-                <iframe src="https://www.youtube.com/embed/7aQrYNcpJDs" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/93frsSIUNeU" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
         </div>
     </section>
-
-    {{-- <section id="pilihan" style="background-color: #092947;">
-        <div class="container">
-            <div class="text-center p-3">
-                <h4 style="color: #FFA500;">Pilihan Terbaik</h4>
-                <h5 style="color: white;">Residence Populer</h5>
-            </div>
-            <div class="row justify-content-center">
-                <!-- Column setup for responsive behavior -->
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/pilihan-1.png') }}" class="card-img-top img-fluid" alt="Matoa 1">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Matoa 1</b></h5>
-                            <p class="card-text" style="color: #8C8B8B;">Jl. Aselih No.85, Cipedak, Kec. Jagakarsa, Kota
-                                Jakarta Selatan</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/pilihan-2.png') }}" class="card-img-top img-fluid" alt="Matoa 2">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Matoa 2</b></h5>
-                            <p class="card-text" style="color: #8C8B8B;">Jl. Aselih No.111, Cipedak, Kec. Jagakarsa, Kota
-                                Jakarta Selatan</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/pilihan-3.png') }}" class="card-img-top img-fluid" alt="Jagakarsa">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Jagakarsa</b></h5>
-                            <p class="card-text" style="color: #8C8B8B;">Jl. Panjang No.24 Cipedak, Kec. Jagakarsa, Kota
-                                Jakarta Selatan</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/pilihan-4.png') }}" class="card-img-top img-fluid" alt="Rawa Kopi">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Rawa Kopi</b></h5>
-                            <p class="card-text" style="color: #8C8B8B;">Jl. Rw. Kopi, Pangkalan Jati, Cinere, Depok City,
-                                West Java</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/pilihan-5.png') }}" class="card-img-top img-fluid" alt="Pondok Cabe">
-                        <div class="card-body">
-                            <h5 class="card-title"><b>Pondok Cabe</b></h5>
-                            <p class="card-text" style="color: #8C8B8B;">Jl. Kunir No.48A, Pd. Cabe Udik, Kec. Pamulang,
-                                Kota Tangerang Selatan</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <section id="pilihan" style="background-color: #eaeaea;">
         <div class="container-fluid">
@@ -711,82 +580,6 @@
             </div>
         </div>
     </section>
-
-    {{-- <section id="lokasi-fasilitas">
-        <div class="container-fluid" style="background-color: #092947">
-            <div class="box-fasilitas py-3">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-lg-6">
-                        <div class="judul-lokasi mb-3">
-                            <h5>Lokasi dan Fasilitas Terdekat</h5>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-hospital"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Rs: Hermina, Mitra Keluarga, Brawijaya,
-                                        Sari Asih, Puri Cinere.</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-cart"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Supermarket: Superindo, Tiptop,
-                                        Indogrosir</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-bag"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Mall: The Park Sawangan, Cinere
-                                        Mall</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-backpack"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Sekolah: Universitas Terbuka, UnPam,
-                                        UPN, Kharisma Bangsa, Harapan Bangsa, MumTaza, SMUN 8, SMPN 2 Dll</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-bus-front"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Terminal Pondok Cabe</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-house-door"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Tempat ibadah: Mesjid, Gereja,
-                                        Vihara</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-airplane"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Lapangan Terbang pondok cabe</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-bicycle"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Sport: lapangan golf pondok cabe, lap
-                                        Tenis, Gor Badminton.</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-egg-fried"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Restaurant: Mc'D, KFC, Solaria, Burger
-                                        King dll</span>
-                                </div>
-                                <div class="d-flex align-items-center mb-2">
-                                    <i class="bi bi-shop"></i>
-                                    <span class="ms-2" style="font-size: 10px;">Pasar Tradisional: Ps Ciputat, Ps
-                                        Parung, Ps.Pondok Labu</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe width="100%" height="300" id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=mutiara%20residence%20pondok%20cabe&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section> --}}
 
     <section id="lokasi-fasilitas">
         <div class="container-fluid" style="background-color: #092947">
@@ -864,33 +657,99 @@
                 </div>
     </section>
 
-    <section id="footer" style="color: white; background-color: #0f1925;">
-        <div class="container">
-            <div class="row">
-                <!-- Logo and Description -->
-                <div class="col-12 col-md-4 mt-4">
-                    <img src="{{ asset('img/main-logo.png') }}" alt="Main Logo" class="mb-3 img-fluid">
-                    <p>There is nothing more important than a good, safe, secure place to get back to.</p>
-                </div>
+    <footer
+    class="text-center text-lg-start text-white"
+    style="background-color: #0f1925;"
+    >
+<!-- Grid container -->
+<div class="container p-4 pb-0">
+<!-- Section: Links -->
+<section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold">
+        Mutiara Residence
+      </h6>
+      <p>
+        Tempat Impian Hidup Bermakna, 
+        di Mana Setiap Sudut Mencerminkan 
+        Elegansi dan Kehangatan Rumah Anda.
+      </p>
+    </div>
 
-                <!-- Contact Information -->
-                <div class="col-12 col-md-4 mt-4">
-                    <h3>Contact</h3>
-                    <p><i class="fa-solid fa-phone mb-4 me-2"></i> (+62) 812 1333 4441</p>
-                    <p><i class="fa-solid fa-envelope mb-4 me-2"></i> mutiara@property.com</p>
-                    <p><i class="fa-solid fa-location-dot mb-4 me-2"></i>Jl. Kunir No.48A, Pd. Cabe Udik, Kec. Pamulang, Kota Tangerang Selatan, Banten 15418</p>
-                </div>
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p><i class="fas fa-home mr-3"></i> Jl. Kunir No.48A, Pd. Cabe Udik</p>
+        <p><i class="fas fa-envelope mr-3"></i> sales@mutiaraproperty.com</p>
+        <p><i class="fas fa-phone mr-3"></i> (+62) 812 1333 4441</p>
+    </div>
+        <!-- Grid column -->
+    </div>
+    <!--Grid row-->
+</section>
+<!-- Section: Links -->
 
-                <!-- Footer Image -->
-                <div class="col-12 col-md-4 mt-4">
-                    <img src="Assets/img/image-footer.svg" alt="Footer Image" class="img-fluid">
-                </div>
+<hr class="my-3">
 
-                <!-- Copyright -->
-                <div class="col-12 mt-3 mb-3">
-                    <h5 class="text-center">Copyright ©2024 All rights reserved</h5>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+  <div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-7 col-lg-8 text-center text-md-start">
+      <!-- Copyright -->
+      <div class="p-3">
+        © 2024 Copyright:
+        <a class="text-white" href="/"
+           >Mutiara Property</a
+          >
+      </div>
+      <!-- Copyright -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+        <style>
+            .btn-floating {
+        width: 40px; /* Atur lebar */
+        height: 40px; /* Atur tinggi */
+        line-height: 40px; /* Atur line-height agar icon terpusat */
+        padding: 0; /* Hilangkan padding default */
+        text-align: center; /* Teks/icon terpusat */
+        }
+        </style>
+      <a
+         class="btn btn-outline-light btn-floating m-1 rounded-circle"
+         class="text-white"
+         role="button"
+         href="https://fb.watch/qY2ik0avOQ/"
+
+         ><i class="fab fa-facebook-f"></i
+        ></a>
+
+      <a
+         class="btn btn-outline-light btn-floating m-1 rounded-circle"
+         class="text-white"
+         role="button"
+         href="https://www.youtube.com/@mutiararesidence-je4hq"
+         ><i class="fab fa-youtube"></i
+        ></a>
+
+      <a
+         class="btn btn-outline-light btn-floating m-1 rounded-circle"
+         class="text-white"
+         role="button"
+         href="https://www.instagram.com/mutiararesidence.id?igsh=ZDlvZzFybnpvdXlt"
+         ><i class="fab fa-instagram"></i
+        ></a>
+    </div>
+    <!-- Grid column -->
+  </div>
+</section>
+<!-- Section: Copyright -->
+</div>
+<!-- Grid container -->
+</footer>
 @endsection

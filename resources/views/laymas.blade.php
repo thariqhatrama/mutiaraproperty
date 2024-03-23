@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="style/style.css" />
 
     <!-- logo title -->
-    <link rel="icon" href="{{ asset('img/main-logo.png') }}" type="image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/main-logo.ico') }}" />
+    <link rel="icon" href="{{ asset('img/main-logo.png') }}" type="image/png">
     <title>Mutiara Residence</title>
     <style>
     .navbar-custom {

@@ -120,7 +120,7 @@
         <button class="btn custom-btn mx-2"
             onclick="changeContent('matoa1', '{{ asset('img/Matoa 1/matoa1-1.jpg') }}')">Matoa 1</button>
         <button class="btn custom-btn mx-2"
-            onclick="changeContent('matoa2', '{{ asset('img/Matoa 2/matoa2-1.png') }}')">Matoa 2</button>
+            onclick="changeContent('matoa2', '{{ asset('img/Matoa 2/Matoa2-1.png') }}')">Matoa 2</button>
         <button class="btn custom-btn mx-2"
             onclick="changeContent('rawa-kopi', '{{ asset('img/Rawa Kopi/rawakopi-1.jpg') }}')">Rawa Kopi</button>
         <button class="btn custom-btn mx-2"
@@ -156,7 +156,7 @@
                 @for ($i = 1; $i <= 4; $i++)
                     <div class="col-md-6">
                         <div class="img-box">
-                            <img src="{{ asset('img/Matoa 2/matoa2-' . $i . '.png') }}" class="portfolio-img"
+                            <img src="{{ asset('img/Matoa 2/Matoa2-' . $i . '.png') }}" class="portfolio-img"
                                 alt="Matoa 2 Image {{ $i }}">
                         </div>
                     </div>
