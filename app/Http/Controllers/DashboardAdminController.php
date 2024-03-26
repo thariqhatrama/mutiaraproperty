@@ -30,20 +30,28 @@ class DashboardAdminController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'judul' => 'required|min:3|max:255',
-            'gambar' => 'required',
-            'slug' => 'nullable|string',
-            'subjudul' => 'nullable|string',
-            'body' => 'required|string',
-            'published_at' => 'required'
-        ]);
+        // $validatedData = $request->validate([
+        //     'judul' => 'required|min:3|max:255',
+        //     'gambar' => 'required|binary',
+        //     'body' => 'required|string'
+        // ]);
 
-        Artikel::create($validatedData);
+        // Artikel::create($validatedData);
 
-        // $request->session()->flash('success', 'Registrasi Selesai! Silahkan Masuk');
+        // // $request->session()->flash('success', 'Registrasi Selesai! Silahkan Masuk');
 
-        return redirect('/dashboard/admin')->with('success', 'Penambahan Artikel Berhasil!');
+        // return redirect('/dashboard/admin')->with('success', 'Penambahan Artikel Berhasil!');
+        $artikel = new Artikel();
+
+        $artikel->judul = $request->judul;
+        $artikel->gambar = $request->gambar;
+        $artikel->slug = $request->slug;
+        $artikel->subjudul = $request->subjudul;
+        $artikel->body = $request->body;
+
+        $artikel->save();
+
+        return redirect('/dashboard/admin');
     }
 
     /**
