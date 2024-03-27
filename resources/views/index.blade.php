@@ -76,8 +76,8 @@
     </section>
 
     <section id="fasilitas">
-        <div class="container-fasilitas container-fluid" style="background-image: url('./img/img-fasilitas.png');">
-            <div class="color-overlay-fasilitas container-fluid">
+        <div class="container-fasilitas" style="background-image: url('./img/img-fasilitas.png');">
+            <div class="color-overlay-fasilitas">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
                         <div class="fasilitas-item">
@@ -123,7 +123,8 @@
 
             <div class="box-card p-3">
                 <div class="row">
-                    <div class="col-lg-5 p-2 d-flex justify-content-lg-center justify-content-center align-items-lg-center">
+                    <div
+                        class="col-lg-5 mt-2 d-flex justify-content-lg-center justify-content-center align-items-lg-center">
                         <div class="card" style="width: 20rem;">
                             {{-- <img src="{{ asset('img/home-1.jpg') }}" class="card-img-top" alt=""> --}}
                             <div class="card-img-top">
@@ -184,7 +185,7 @@
                         <img src="{{ asset('img/harga1m.png') }}" class="img-harga img-fluid" alt="">
                     </div>
                     <div
-                        class="col-lg-5 p-2 d-flex justify-content-lg-center justify-content-center align-items-lg-center">
+                        class="col-lg-5 mt-3 d-flex justify-content-lg-center justify-content-center align-items-lg-center">
                         <div class="card" style="width: 20rem;">
                             {{-- <img src="{{ asset('img/home-1.jpg') }}" class="card-img-top" alt=""> --}}
                             <div class="card-img-top">
@@ -232,7 +233,7 @@
                                             <h4 class="p-1" style="font-size: 12px">Tipe Lantai 2</h4>
                                         </div>
                                     </div>
-                                    <div class="col-lg-7">
+                                    <div class="col-7">
                                         <p><b>Luas Bangunan (72 m2)</b></p>
                                         <p><b>Luas Tanah (84 m2)</b></p>
                                     </div>
