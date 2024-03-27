@@ -71,8 +71,10 @@
         }
     </style>
     <section id="utama">
-        <img src="{{ asset('img/desktoplanding.jpg') }}" class="desktop-image img-fluid" alt="">
-        <img src="{{ asset('img/mobilelanding.jpg') }}" class="mobile-image img-fluid" alt="">
+        <div class="box-utama container-fluid">
+            <img src="{{ asset('img/desktoplanding.jpg') }}" class="desktop-image img-fluid" alt="">
+            <img src="{{ asset('img/mobilelanding.jpg') }}" class="mobile-image img-fluid" alt="">
+        </div>
     </section>
 
     <section id="fasilitas">
@@ -248,46 +250,47 @@
 
     <section id="keunggulan">
         <div class="keunggulan">
-            <div class="color-overlay-keunggulan d-flex">
-                <div class="row">
-                    <div class="img-keunggulan col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
-                        <img src="img/img-keunggulan.png" width="350" height="400" alt="">
-                    </div>
-                    <div class="deskripsi-keunggulan col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
-                        <div class="centered-text-box">
-                            <h3 style="color: #FFA500"><b>Keunggulan</b></h3>
-                            <h5 style="color: #2173C0">Pelayanan yang Kami Berikan untuk Anda</h5>
-                            <p class="mb-3" style="color: #8C8B8B">Kami selalu siap membantu dengan memberikan layanan
-                                terbaik untuk Anda.</p>
-                            <div class="text-box-keunggulan">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-2">
-                                        <i><img src="/img/icon-keunggulan.png" class="icon-keunggulan"
-                                                alt=""></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <p>Penawaran dan Pelayanan Terbaik</p>
-                                    </div>
+            <div class="color-overlay-keunggulan d-flex flex-column flex-lg-row">
+                <div class="img-keunggulan col-12 col-lg-6 d-flex justify-content-center align-items-center my-3">
+                    <img src="img/img-keunggulan.png" class="img-fluid" alt="Keunggulan"
+                        style="max-width: 350px; max-height: 400px;">
+                </div>
+                <div class="deskripsi-keunggulan col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="centered-text-box text-center text-lg-start">
+                        <h3 style="color: #FFA500"><b>Keunggulan</b></h3>
+                        <h5 style="color: #2173C0">Pelayanan yang Kami Berikan untuk Anda</h5>
+                        <p class="mb-3" style="color: #8C8B8B">Kami selalu siap membantu dengan memberikan layanan
+                            terbaik untuk Anda.</p>
+                        <!-- Repeated for each feature, adjust col-2 to col-3 or col-4 if needed -->
+                        <div class="text-box-keunggulan mb-2">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 col-md-2">
+                                    <img src="/img/icon-keunggulan.png" class="icon-keunggulan img-fluid"
+                                        alt="Penawaran dan Pelayanan Terbaik">
+                                </div>
+                                <div class="col-9 col-md-10">
+                                    <p>Penawaran dan Pelayanan Terbaik</p>
                                 </div>
                             </div>
-                            <div class="text-box-keunggulan">
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-2">
-                                        <i><img src="/img/icon-keamanan.png" class="icon-keunggulan" alt=""></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <p>Keamanan 24 Jam</p>
-                                    </div>
+                        </div>
+                        <div class="text-box-keunggulan mb-2">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 col-md-2">
+                                    <img src="/img/icon-keamanan.png" class="icon-keunggulan img-fluid"
+                                        alt="Keamanan 24 Jam">
+                                </div>
+                                <div class="col-9 col-md-10">
+                                    <p>Keamanan 24 Jam</p>
                                 </div>
                             </div>
-                            <div class="text-box-keunggulan">
-                                <div class="row d-flex justify-content-center align-items-center">
-                                    <div class="col-2">
-                                        <i><img src="/img/icon-3.png" class="icon-keunggulan" alt=""></i>
-                                    </div>
-                                    <div class="col-10">
-                                        <p>Harga terbaik di pasaran</p>
-                                    </div>
+                        </div>
+                        <div class="text-box-keunggulan">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3 col-md-2">
+                                    <img src="/img/icon-3.png" class="icon-keunggulan img-fluid" alt="Harga Terbaik">
+                                </div>
+                                <div class="col-9 col-md-10">
+                                    <p>Harga terbaik di pasaran</p>
                                 </div>
                             </div>
                         </div>
