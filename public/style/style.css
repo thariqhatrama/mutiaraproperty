@@ -315,8 +315,19 @@ h2 {
     background-color: #eaeaea;
 }
 
-.text-keunggulan {
-    font-size: 12px;
+@media (max-width: 414px) {
+    .color-overlay-keunggulan {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: #eaeaea;
+    }
+}
+
+@media (max-width) {
+    .text-keunggulan {
+        font-size: 12px;
+    }
 }
 
 .text-box-keunggulan {

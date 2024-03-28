@@ -58,7 +58,8 @@
             }
 
             .text-box-keunggulan {
-                width: 320px;
+                width: auto;
+                height: auto;
             }
         }
 
@@ -249,48 +250,50 @@
     </section>
 
     <section id="keunggulan">
-        <div class="keunggulan">
-            <div class="color-overlay-keunggulan d-flex flex-column flex-lg-row">
-                <div class="img-keunggulan col-12 col-lg-6 d-flex justify-content-center align-items-center my-3">
+        <div class="keunggulan container-fluid">
+            <div class="color-overlay-keunggulan d-flex row">
+                <div
+                    class="img-keunggulan col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center my-3">
                     <img src="img/img-keunggulan.png" class="img-fluid" alt="Keunggulan"
-                        style="max-width: 350px; max-height: 400px;">
+                        style="width: 30rem; height: 25rem; position: relative;">
                 </div>
-                <div class="deskripsi-keunggulan col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                    <div class="centered-text-box text-center text-lg-start">
+                <div
+                    class="deskripsi-keunggulan col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="centered-text-box text-lg-start">
                         <h3 style="color: #FFA500"><b>Keunggulan</b></h3>
                         <h5 style="color: #2173C0">Pelayanan yang Kami Berikan untuk Anda</h5>
                         <p class="mb-3" style="color: #8C8B8B">Kami selalu siap membantu dengan memberikan layanan
                             terbaik untuk Anda.</p>
-                        <!-- Repeated for each feature, adjust col-2 to col-3 or col-4 if needed -->
                         <div class="text-box-keunggulan mb-2">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-3 col-md-2">
-                                    <img src="/img/icon-keunggulan.png" class="icon-keunggulan img-fluid"
+                            <div class="row">
+                                <div class="col-3 col-md-2 d-flex align-items-center justify-content-center mx-auto">
+                                    <img src="{{ asset('/img/icon-keunggulan.png') }}" class="icon-keunggulan img-fluid"
                                         alt="Penawaran dan Pelayanan Terbaik">
                                 </div>
                                 <div class="col-9 col-md-10">
-                                    <p>Penawaran dan Pelayanan Terbaik</p>
+                                    <p style="text-align: start">Penawaran dan Pelayanan Terbaik</p>
                                 </div>
                             </div>
                         </div>
                         <div class="text-box-keunggulan mb-2">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-3 col-md-2">
-                                    <img src="/img/icon-keamanan.png" class="icon-keunggulan img-fluid"
+                            <div class="row">
+                                <div class="col-3 col-md-2 d-flex align-items-center justify-content-center">
+                                    <img src="{{ asset('/img/icon-keamanan.png') }}" class="icon-keunggulan img-fluid"
                                         alt="Keamanan 24 Jam">
                                 </div>
                                 <div class="col-9 col-md-10">
-                                    <p>Keamanan 24 Jam</p>
+                                    <p style="text-align: start">Keamanan 24 Jam</p>
                                 </div>
                             </div>
                         </div>
                         <div class="text-box-keunggulan">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-3 col-md-2">
-                                    <img src="/img/icon-3.png" class="icon-keunggulan img-fluid" alt="Harga Terbaik">
+                            <div class="row">
+                                <div class="col-3 col-md-2 d-flex align-items-center justify-content-center">
+                                    <img src="{{ asset('/img/icon-3.png') }}" class="icon-keunggulan img-fluid"
+                                        alt="Harga Terbaik">
                                 </div>
-                                <div class="col-9 col-md-10">
-                                    <p>Harga terbaik di pasaran</p>
+                                <div class="col-9 col-md-10 align-content-center">
+                                    <p style="text-align: start">Harga terbaik di pasaran</p>
                                 </div>
                             </div>
                         </div>
@@ -524,7 +527,7 @@
                 </div>
     </section>
 
-    <section id="footer" style="color: white; background-color: #0f1925;">
+    {{-- <section id="footer" style="color: white; background-color: #0f1925;">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 mt-4">
@@ -551,5 +554,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection
