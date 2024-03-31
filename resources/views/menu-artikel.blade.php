@@ -6,7 +6,7 @@
             <h3 class="text-center mb-4">Menu Artikel</h3>
             <div class="row">
                 <!-- Artikel 1 -->
-                <div class="col-md-4 d-flex align-items-stretch">
+                <div class="col-lg-4 col-sm-12 col-md-4 d-flex align-items-stretch">
                     <div class="card mb-4">
                         <img src="{{ asset('img/artikel-1.png') }}" class="card-img-top"
                             alt="Perumahan Elite Terjangkau Jakarta">
@@ -20,7 +20,7 @@
                 </div>
 
                 <!-- Artikel 2 -->
-                <div class="col-md-4 d-flex align-items-stretch">
+                <div class="col-lg-4 col-sm-12 col-md-4 d-flex align-items-stretch">
                     <div class="card mb-4">
                         <img src="{{ asset('img/artikel-2.png') }}" class="card-img-top"
                             alt="Keuntungan Memiliki Rumah Cluster">
@@ -35,7 +35,7 @@
                 </div>
 
                 <!-- Artikel 3 -->
-                <div class="col-md-4 d-flex align-items-stretch">
+                <div class="col-lg-4 col-sm-12 col-md-4 d-flex align-items-stretch">
                     <div class="card mb-4">
                         <img src="{{ asset('img/artikel-3.png') }}" class="card-img-top" alt="Inspirasi Warna Cat Rumah">
                         <div class="card-body">

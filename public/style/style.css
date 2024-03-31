@@ -324,9 +324,20 @@ h2 {
     }
 }
 
-@media (max-width) {
+@media (max-width: 414px) {
     .text-keunggulan {
         font-size: 12px;
+    }
+    .keunggulan-img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+@media (min-width: 768px) {
+    .keunggulan-img {
+        width: 30rem;
+        height: 25rem;
+        position: relative;
     }
 }
 

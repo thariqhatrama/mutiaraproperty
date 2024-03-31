@@ -254,8 +254,7 @@
             <div class="color-overlay-keunggulan d-flex row">
                 <div
                     class="img-keunggulan col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center my-3">
-                    <img src="img/img-keunggulan.png" class="img-fluid" alt="Keunggulan"
-                        style="width: 30rem; height: 25rem; position: relative;">
+                    <img src="img/img-keunggulan.png" class="keunggulan-img img-fluid" alt="Keunggulan">
                 </div>
                 <div
                     class="deskripsi-keunggulan col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
@@ -271,7 +270,7 @@
                                         alt="Penawaran dan Pelayanan Terbaik">
                                 </div>
                                 <div class="col-9 col-md-10">
-                                    <p style="text-align: start">Penawaran dan Pelayanan Terbaik</p>
+                                    <p style="text-align: start; margin-top: 10px;">Penawaran dan Pelayanan Terbaik</p>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +281,7 @@
                                         alt="Keamanan 24 Jam">
                                 </div>
                                 <div class="col-9 col-md-10">
-                                    <p style="text-align: start">Keamanan 24 Jam</p>
+                                    <p style="text-align: start; margin-top: 10px;">Keamanan 24 Jam</p>
                                 </div>
                             </div>
                         </div>
@@ -293,7 +292,7 @@
                                         alt="Harga Terbaik">
                                 </div>
                                 <div class="col-9 col-md-10 align-content-center">
-                                    <p style="text-align: start">Harga terbaik di pasaran</p>
+                                    <p style="text-align: start; margin-top: 10px;">Harga terbaik di pasaran</p>
                                 </div>
                             </div>
                         </div>
