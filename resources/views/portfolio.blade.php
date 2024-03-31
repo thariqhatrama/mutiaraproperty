@@ -116,6 +116,10 @@
 
     <div class="navigation-center">
         <button class="btn custom-btn mx-2"
+            onclick="changeContent('brawijaya', '{{ asset('img/Brawijaya/bwj-3.jpg') }}')">Brawijaya</button>
+        <button class="btn custom-btn mx-2"
+            onclick="changeContent('kemang', '{{ asset('img/Kemang/kmg-1.jpg') }}')">Kemang</button>
+        <button class="btn custom-btn mx-2"
             onclick="changeContent('pondok-cabe', '{{ asset('img/Pondok Cabe/pondokcabe-1.png') }}')">Pondok Cabe</button>
         <button class="btn custom-btn mx-2"
             onclick="changeContent('matoa1', '{{ asset('img/Matoa 1/matoa1-1.jpg') }}')">Matoa 1</button>
@@ -128,6 +132,30 @@
     </div>
 
     <div class="container">
+
+        <div id="brawijaya" class="portfolio-section">
+            <div class="row">
+                @for ($i = 1; $i <= 6; $i++)
+                    <div class="col-md-4 col-sm-6">
+                        <div class="img-box">
+                            <img src="{{ asset('img/Brawijaya/bwj-' . $i . '.jpg') }}" class="portfolio-img"
+                                alt="Brawijaya Image {{ $i }}">
+                        </div>
+                    </div>
+                @endfor
+            </div>
+        </div>
+
+        <div id="kemang" class="portfolio-section">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="img-box">
+                        <img src="{{ asset('img/Kemang/kmg-1.jpg') }}" class="portfolio-img" alt="Kemang Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="pondok-cabe" class="portfolio-section">
             <div class="row">
                 @for ($i = 1; $i <= 6; $i++)
