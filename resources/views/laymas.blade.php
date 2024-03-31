@@ -83,6 +83,12 @@
                         <a class="nav-link" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#type-rumah">Type Rumah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keunggulan">Keunggulan </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{ url('/artikel') }}">Artikel</a>
                     </li>
                     <li class="nav-item">

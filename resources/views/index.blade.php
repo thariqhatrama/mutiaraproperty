@@ -73,7 +73,7 @@
     </style>
     <section id="utama">
         <div class="box-utama container-fluid">
-            <img src="{{ asset('img/desktoplanding.jpg') }}" class="desktop-image img-fluid" alt="">
+            <img src="{{ asset('img/header 2.png') }}" class="desktop-image img-fluid" alt="">
             <img src="{{ asset('img/mobilelanding.jpg') }}" class="mobile-image img-fluid" alt="">
         </div>
     </section>
@@ -337,7 +337,6 @@
                     <div
                         class="col-lg-5 p-2 d-flex justify-content-lg-center justify-content-center align-items-lg-center">
                         <div class="card" style="width: 20rem;">
-                            {{-- <img src="{{ asset('img/home-1.jpg') }}" class="card-img-top" alt=""> --}}
                             <div class="card-img-top">
                                 <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
@@ -351,16 +350,16 @@
                                     </div>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img src="{{ asset('img/home-2.jpg') }}" class="img-carousel d-block w-100"
-                                                alt="">
+                                            <img src="{{ asset('img/Pondok Cabe/pondokcabe-4.png') }}"
+                                                class="img-carousel d-block w-100" alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-2a.jpg') }}" class="img-carousel d-block w-100"
-                                                alt="">
+                                            <img src="{{ asset('img/Pondok Cabe/pondokcabe-5.png') }}"
+                                                class="img-carousel d-block w-100" alt="">
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="{{ asset('img/home-2.jpg') }}" class="img-carousel d-block w-100"
-                                                alt="">
+                                            <img src="{{ asset('img/Pondok Cabe/pondokcabe-6.png') }}"
+                                                class="img-carousel d-block w-100" alt="">
                                         </div>
                                     </div>
                                     <button class="carousel-control-prev" type="button"
@@ -497,7 +496,7 @@
         </div>
     </section>
 
-    <section id="portfolio">
+    {{-- <section id="portfolio">
         <div class="container-fluid p-2" style="background-color: #092947;">
             <style>
                 .embed-responsive {
@@ -529,6 +528,41 @@
                 </iframe>
             </div>
         </div>
+    </section> --}}
+
+    <section id="portfolio">
+        <div class="container-fluid p-2 d-flex justify-content-center" style="background-color: #092947;">
+            <style>
+                .embed-responsive {
+                    position: relative;
+                    width: 100%;
+                    /* Setengah dari lebar viewport */
+                    padding-top: 35%;
+                    /* Memperbarui ini untuk mempertahankan rasio aspek */
+                    margin: auto;
+                    /* Memusatkan iframe secara horizontal */
+                }
+
+                .embed-responsive iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;
+                }
+            </style>
+
+            <div class="embed-responsive">
+                <iframe src="https://www.youtube.com/embed/93frsSIUNeU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
     </section>
 
     <section id="pilihan" style="background-color: #eaeaea;">
@@ -539,10 +573,10 @@
             </div>
             <div class="row justify-content-center">
                 <!-- Column setup for responsive behavior -->
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/Brawijaya/bwj-2.jpg') }}" class="card-img-top img-fluid" alt="Brawijaya"
-                            onclick="location.href='/portfolio#Brawijaya';">
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-3">
+                    <div class="card-pilihan card w-100">
+                        <img src="{{ asset('img/Brawijaya/bwj-2.jpg') }}" class="card-img-top-pilihan img-fluid"
+                            alt="Brawijaya" onclick="location.href='/portfolio#Brawijaya';">
                         <div class="card-body">
                             <h5 class="card-title"><b>Brawijaya</b></h5>
                             <p class="card-text" style="color: black;">Jl. Brawijaya No.11, Cipedak, Kec. Jagakarsa, Kota
@@ -551,10 +585,10 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/Kemang/kmg-1.jpg') }}" class="card-img-top img-fluid" alt="Brawijaya"
-                            onclick="location.href='/portfolio#Brawijaya';">
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-3">
+                    <div class="card-pilihan card w-100">
+                        <img src="{{ asset('img/Kemang/kmg-1.jpg') }}" class="card-img-top-pilihan img-fluid"
+                            alt="Brawijaya" onclick="location.href='/portfolio#Brawijaya';">
                         <div class="card-body">
                             <h5 class="card-title"><b>Kemang</b></h5>
                             <p class="card-text" style="color: black;">Jl. Kemang Timur No.11, Kemang, Kec. Pejaten, Kota
@@ -563,9 +597,9 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/Matoa 1/matoa1-1.jpg') }}" class="card-img-top img-fluid"
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-3">
+                    <div class="card-pilihan card w-100">
+                        <img src="{{ asset('img/Matoa 1/matoa1-1.jpg') }}" class="card-img-top-pilihan img-fluid"
                             alt="Matoa 1">
                         <div class="card-body">
                             <h5 class="card-title"><b>Matoa 1</b></h5>
@@ -575,9 +609,9 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/Matoa 2/Matoa2-1.png') }}" class="card-img-top img-fluid"
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-3">
+                    <div class="card-pilihan card w-100">
+                        <img src="{{ asset('img/Matoa 2/Matoa2-1.png') }}" class="card-img-top-pilihan img-fluid"
                             alt="Matoa 2">
                         <div class="card-body">
                             <h5 class="card-title"><b>Matoa 2</b></h5>
@@ -587,9 +621,9 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/Jagakarsa/jagakarsa-1.jpg') }}" class="card-img-top img-fluid"
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-3">
+                    <div class="card-pilihan card w-100">
+                        <img src="{{ asset('img/Jagakarsa/jagakarsa-1.jpg') }}" class="card-img-top-pilihan img-fluid"
                             alt="Jagakarsa">
                         <div class="card-body">
                             <h5 class="card-title"><b>Jagakarsa</b></h5>
@@ -599,9 +633,9 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/Rawa Kopi/rawakopi-1.jpg') }}" class="card-img-top img-fluid"
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-3">
+                    <div class="card-pilihan card w-100">
+                        <img src="{{ asset('img/Rawa Kopi/rawakopi-1.jpg') }}" class="card-img-top-pilihan img-fluid"
                             alt="Rawa Kopi">
                         <div class="card-body">
                             <h5 class="card-title"><b>Rawa Kopi</b></h5>
@@ -611,9 +645,9 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-3">
-                    <div class="card w-100">
-                        <img src="{{ asset('img/Pondok Cabe/pondokcabe-5.png') }}" class="card-img-top img-fluid"
+                <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch mb-3">
+                    <div class="card-pilihan card w-100">
+                        <img src="{{ asset('img/Pondok Cabe/pondokcabe-5.png') }}" class="card-img-top-pilihan img-fluid"
                             alt="Pondok Cabe">
                         <div class="card-body">
                             <h5 class="card-title"><b>Pondok Cabe</b></h5>
@@ -706,7 +740,7 @@
         <div class="container-fluid" style="background-color: #092947">
             <div class="box-fasilitas py-3">
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 mb-sm-3">
                         <div class="judul-lokasi mb-3">
                             <h3>Lokasi dan Fasilitas Terdekat</h3>
                         </div>

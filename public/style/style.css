@@ -302,7 +302,7 @@ h2 {
 /* Keunggulan */
 .keunggulan {
     background-size: cover;
-    min-height: 75vh;
+    min-height: 76vh;
     position: relative;
     color: #000;
 }
@@ -388,10 +388,15 @@ h2 {
     height: 150px;
 }
 
-.card-img-top {
+.card-img-top-pilihan {
     width: 350px;
     height: 221px;
     border-radius: 15px;
+}
+
+.card-pilihan:hover {
+    transform: scale(1.05);
+    background-color: #cac2c2;
 }
 
 /* lokasi-fasilitas */
